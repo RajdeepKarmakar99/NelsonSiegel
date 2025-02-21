@@ -53,8 +53,8 @@ def Optimizer(observed_yields, maturities):
 # ---------------------------
 # Data Loading and Preparation
 # ---------------------------
-# Load yield data from an Excel file. Reverse rows if your data is sorted with the newest date first.
-data = pd.read_excel('InterestRate.xlsx')[::-1]
+# Load yield data from an Excel file.
+data = pd.read_excel('InterestRate.xlsx')
 
 # Extract the 'Date' column and yield columns (assumes first column is 'Date')
 dates = data['Date'].values
